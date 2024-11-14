@@ -1,0 +1,53 @@
+[
+    {
+        "title" : "Airport Transfer",
+        "price" : 65,
+        "label" : "Airport Transfer",
+        "desc" : "1.waiting charges 2.Additional stop chargesLorem Ipsum is simply dummy text of the printing",
+        "vehicleId" : "6714823ea2a6e42354b2e1b3",
+        "vehicleCategory" : "6_SEATER",
+        "serviceCategory": "AIRPORT_TRANSFER",
+        "images" : [{
+            "image" :"airport_dep.png"
+        }]    
+    },
+
+    {
+        "title" : "One Way transfer",
+        "price" : 60,
+        "label" : "One Way transfer",
+        "desc" : "1.waiting charges 2.Additional stop chargesLorem Ipsum is simply dummy text of the printing",
+        "vehicleId" : "6714823ea2a6e42354b2e1b3",
+        "vehicleCategory" : "6_SEATER",
+        "serviceCategory": "ONE_WAY_TRANSFER",
+        "images" : [{
+            "image" :"airport_dep.png"
+        }]    
+    },
+
+    {
+        "title" : "Two Way transfer",
+        "price" : 120,
+        "label" : "Two Way transfer",
+        "desc" : "1.waiting charges 2.Additional stop chargesLorem Ipsum is simply dummy text of the printing",
+        "vehicleId" : "6714823ea2a6e42354b2e1b3",
+        "vehicleCategory" : "6_SEATER",
+        "serviceCategory": "TWO_WAY_TRANSFER",
+        "images" : [{
+            "image" :"airport_dep.png"
+        }]    
+    },
+
+    {
+        "title" : "Hourly Charter",
+        "price" : 180,
+        "label" : "Hourly Charter",
+        "desc" : "1.waiting charges 2.Additional stop chargesLorem Ipsum is simply dummy text of the printing",
+        "vehicleId" : "6714823ea2a6e42354b2e1b3",
+        "vehicleCategory" : "6_SEATER",
+        "images" : [{
+            "image" :"airport_dep.png"
+        }]    
+    }   
+    
+]

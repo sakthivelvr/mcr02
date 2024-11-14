@@ -1,0 +1,88 @@
+[
+   
+{
+	"name" : "6 Seater Toyota Alphard/Vellfire",
+	"type" : "Alphard/Vellfire",
+	"label" : "6 Seater Toyota Alphard/Vellfire",
+	"noOfSeats" : 6,
+	"desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+	"services" : [],
+	"cheapestPrice" : 60,
+	"images" : [{
+		"image" :"6_seate.png"
+	}],
+	"category": "6_SEATER"
+},
+
+{
+	"name" : "7 Seater Mercedes Viano",
+	"type" : "Mercedes Viano",
+	"label" : "7 Seater Mercedes Viano",
+	"noOfSeats" : 7,
+	"desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+	"services" : [],
+	"cheapestPrice" : 60,
+	"images" : [{
+		"image" :"7_seate.png"
+	}],
+	"category": "7_SEATER"
+},
+
+{
+	"name" : "9 Seater Minibus",
+	"type" : "Minibus",
+	"label" : "9 Seater Minibus",
+	"noOfSeats" : 9,
+	"desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+	"services" : [],
+	"cheapestPrice" : 60,
+	"images" : [{
+		"image" :"9_seate.png"
+	}],
+	"category": "9_SEATER"
+},
+
+{
+	"name" : "13 Seater Minibus",
+	"type" : "Minibus",
+	"label" : "13 Seater Minibus",
+	"noOfSeats" : 13,
+	"desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+	"services" : [],
+	"cheapestPrice" : 65,
+	"images" : [{
+		"image" :"13_seate.png"
+	}],
+	"category": "13_SEATER"
+},
+
+{
+	"name" : "23 Seater Coach",
+	"type" : "Coach",
+	"label" : "23 Seater Coach",
+	"noOfSeats" : 23,
+	"desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+	"services" : [],
+	"cheapestPrice" : 100,
+	"images" : [{
+		"image" :"23_seater.png"
+	}],
+	"category": "23 SEATER"
+},
+
+{
+	"name" : "45 Seater Coach",
+	"type" : "45 Seater Coach",
+	"label" : "40 / 45 Seater Coach",
+	"noOfSeats" : 45,
+	"desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+	"services" : [],
+	"cheapestPrice" : 140,
+	"images" : [{
+		"image" :"45_seate.png"
+	}],
+	"category": "40/45_SEATER"
+	
+}
+ 
+]

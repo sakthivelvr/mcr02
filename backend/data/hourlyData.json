@@ -1,0 +1,217 @@
+[{
+	"title" : "hourlyData",
+	"data" : [   
+    {
+      "_id": "1",
+      "value": 165.00,
+      "hours": 3,
+      "name": "3 Hours $165.00",
+      "title" : "3 Hours"
+    },
+    {
+      "_id": "2",
+      "value": 220.00,
+      "hours": 4,
+      "name": "4 Hours $220.00",
+      "title" : "4 Hours"
+
+    },
+    {
+      "_id": "3",
+      "value": 260.00,
+      "hours": 5,
+      "name": "5 Hours $260.00",
+      "title" : "5 Hours"
+
+    },
+    {
+      "_id": "4",
+      "value": 310.00,
+      "hours": 6,
+      "name": "6 Hours $310.00",
+      "title" : "6 Hours"
+
+    },
+    {
+      "_id": "5",
+      "value": 370.00,
+      "hours": 7,
+      "name": "7 Hours $370.00",
+      "title" : "7 Hours"
+
+    },
+    {
+      "_id": "6",
+      "value": 420.00,
+      "hours": 8,
+      "name": "8 Hours $420.00",
+      "title" : "8 Hours"
+
+    },
+    {
+      "_id": "7",
+      "value": 470.00,
+      "hours": 9,
+      "name": "9 Hours $470.00",
+      "title" : "9 Hours"
+
+    },
+    {
+      "_id": "8",
+      "value": 520.00,
+      "hours": 10,
+      "name": "10 Hours $520.00",
+      "title" : "10 Hours"
+
+    },
+    {
+      "_id": "9",
+      "value": 570.00,
+      "hours": 11,
+      "name": "11 Hours $570.00",
+      "title" : "11 Hours"
+
+    },
+    {
+      "_id": "10",
+      "value": 370.00,
+      "hours": 12,
+      "name": "12 Hours $630.00",
+      "title" : "12 Hours"
+
+    }
+    
+  ],
+	"hourlyDataCategory": "6_7_9_13_SEATER"
+
+},
+
+{
+	"title" : "hourlyData",
+	"data" : [   
+    {
+      "_id": "1",
+      "value": 255.00,
+      "hours": 3,
+      "name": "3 Hours $255.00",
+      "title" : "3 Hours"
+    },
+    {
+      "_id": "2",
+      "value": 330.00,
+      "hours": 4,
+      "name": "4 Hours $330.00",
+      "title" : "4 Hours"
+
+    },
+    {
+      "_id": "3",
+      "value": 410.00,
+      "hours": 5,
+      "name": "5 Hours $410.00",
+      "title" : "5 Hours"
+
+    },
+    {
+      "_id": "4",
+      "value": 500.00,
+      "hours": 6,
+      "name": "6 Hours $500.00 ",
+      "title" : "6 Hours"
+
+    },
+    {
+      "_id": "5",
+      "value": 580.00,
+      "hours": 7,
+      "name": "7 Hours $580.00",
+      "title" : "7 Hours"
+
+    },
+    {
+      "_id": "6",
+      "value": 660.00,
+      "hours": 8,
+      "name": "8 Hours $660.00",
+      "title" : "8 Hours"
+
+    },
+    {
+      "_id": "7",
+      "value": 750.00,
+      "hours": 9,
+      "name": "9 Hours $750.00",
+      "title" : "9 Hours"
+
+    },
+    {
+      "_id": "8",
+      "value": 830.00,
+      "hours": 10,
+      "name": "10 Hours $830.00",
+      "title" : "10 Hours"
+
+    },
+    {
+      "_id": "9",
+      "value": 910.00,
+      "hours": 11,
+      "name": "11 Hours $910.00",
+      "title" : "11 Hours"
+
+    },
+    {
+      "_id": "10",
+      "value": 1000.00,
+      "hours": 12,
+      "name": "12 Hours $1000.00",
+      "title" : "12 Hours"
+
+    }
+    
+  ],
+	"hourlyDataCategory": "23_SEATER"
+
+},
+
+{
+	"title" : "hourlyData",
+	"data" : [   
+    {
+      "_id": "1",
+      "value": 390.00,
+      "hours": 3,
+      "name": "3 Hours $390.00",
+      "title" : "3 Hours"
+    },
+    {
+      "_id": "2",
+      "value": 750.00,
+      "hours": 6,
+      "name": "6 Hours $750.00",
+      "title" : "6 Hours"
+
+    },
+    {
+      "_id": "3",
+      "value": 1150.00,
+      "hours": 9,
+      "name": "9 Hours $1150.00",
+      "title" : "9 Hours"
+
+    },
+    {
+      "_id": "4",
+      "value": 1300.00,
+      "hours": 12,
+      "name": "12 Hours $1300.00 ",
+      "title" : "12 Hours"
+
+    }
+    
+  ],
+	"hourlyDataCategory": "45_SEATER"
+
+}
+
+]
