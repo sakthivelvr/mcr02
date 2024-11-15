@@ -10833,7 +10833,7 @@ html {
 .page-section {
   padding: 6rem 0;
 }
-.
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -10852,11 +10852,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 0;
+  margin-top: 0.25rem;
+
 }
 .divider-custom .divider-custom-line {
-  width: 100%;
-  max-width: 7rem;
-  height: 0.25rem;
+  width: 75%;
+  max-width: 3.5rem;
+  height: 0.15rem;
   background-color: #091057;
   border-radius: 1rem;
   border-color: #091057;
@@ -10869,7 +10872,7 @@ html {
 }
 .divider-custom .divider-custom-icon {
   color: #091057;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
@@ -10878,6 +10881,40 @@ html {
   color: #fff;
 }
 
+
+@media (min-width: 992px) {
+  .divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #091057;
+    border-radius: 1rem;
+    border-color: #091057;
+  }
+  .divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+  }
+  .divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+  }
+  .divider-custom .divider-custom-icon {
+    color: #091057;
+    font-size: 2rem;
+  }
+  .divider-custom.divider-light .divider-custom-line {
+    background-color: #fff;
+  }
+  .divider-custom.divider-light .divider-custom-icon {
+    color: #fff;
+  }
+}
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
@@ -10970,24 +11007,29 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
+  padding-top: calc(1rem);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 1.65rem;
+  line-height: 1.65rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 10rem;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(5rem + 32px);
     padding-bottom: 6rem;
+    height: 100vh !important;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
@@ -10995,6 +11037,11 @@ html {
   }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
+  }
+  .masthead-avatar {
+    width: 20rem !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 .portfolio .portfolio-item {
@@ -11155,6 +11202,7 @@ body {
 
 .navbar {
 background-color: #091057 !important;
+color: #ffffff  !important;
 }
 
 .masthead {
@@ -11170,4 +11218,26 @@ background-color: #A6AEBF !important;
   font-size: 1.25rem;
   line-height: 2rem;
  
+}
+
+
+#navbarNew {
+  color:  #ffffff !important;
+  padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  #navbarNew {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+#navbarNew .navbar-nav .nav-item .nav-link{
+  color:  #ffffff !important;
+}
+
+.navbar-brand {
+  color:  #ffffff !important;
 }

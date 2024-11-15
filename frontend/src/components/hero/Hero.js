@@ -6,7 +6,7 @@ export default function Home() {
     
     <>
      
-        <header className="masthead bg-primary text-white text-center" >
+        <header className="masthead bg-primary text-white text-center vh-lg-100" >
             <div className="container d-flex align-items-center flex-column">
                 {/* <!-- Masthead Avatar Image--> */}
                 <img className="masthead-avatar mb-5" src="./images/maxicabride-logo.png" alt="logo" />

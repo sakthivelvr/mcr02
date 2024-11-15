@@ -15,10 +15,14 @@ import { clearOrderCreated } from "../../slices/ordersSlice";
 import { clearAuthError } from "../../actions/userActions";
 
 export default function PaymentPayNowQr() {
-  const [heading, setHeading] = useState("Processing!");
-  const [resultText, setResultText] = useState("Please wait ...");
+  const [heading, setHeading] = useState("Payment through Paynow QR");
+  const [resultText, setResultText] = useState("Take screenshot of the QR code & go to your bank app");
   const [pageResult, setPageResult] = useState(false);
   const [textColor, setTextColor] = useState("text-success");
+  const [showPayBtn, setShowPayBtn] = useState(true);
+  const [showHomeBtn, setShowHomeBtn] = useState(false);
+
+  
 
   let bookingData = JSON.parse(sessionStorage.getItem("bookingData"));
   console.log("bookingData  : ", bookingData);
@@ -63,18 +67,27 @@ export default function PaymentPayNowQr() {
         type: "success",
         onOpen: () => {
           setTimeout(() => {
-            document.getElementById("submitBtn").disabled = false;
+            setShowHomeBtn(true);
+            // document.getElementById("submitBtn").disabled = false;
           }, "5000");
+          
           dispatch(clearOrderCreated());
         },
       });
       return;
     }
+
+    
+
   }, [ dispatch, navigate, isOrderCreated]);
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    document.querySelector("#submit_btn").disabled = true;
+
+    setShowPayBtn(false);
+    setHeading("Loading...");
+    setResultText("Please wait");
+
     try {
       const { data } = await axios.post(
         "/api/v1/payment/process/paynowqr",
@@ -107,8 +120,8 @@ export default function PaymentPayNowQr() {
                 paymentDetails: {
                   paymentMode: "PAYNOW_QR",
                   paymentStatus: "PAID",
-                  paidAt: new Date.now(),
-                  paymentTxnId: "qwe458g7g885fdfjg78952g",
+                  paidAt: new Date(),
+                  paymentTxnId: paymentIntent.id,
                 },
               })
             );
@@ -122,14 +135,19 @@ export default function PaymentPayNowQr() {
             setResultText("Please try again");
 
             setPageResult(true);
+            setShowPayBtn(true)
             // Inform the customer that the payment did not go through
           }
 
         });
 
       console.log("PAYMENT RESULT : ", await res1);
+      
     } catch (error) {
       console.log("trycatch error...", error);
+      setHeading("Something went wrong!");
+            setResultText("Please try again");
+      setShowPayBtn(true)
     }
   };
 
@@ -149,18 +167,33 @@ export default function PaymentPayNowQr() {
                   <h6 className={textColor}>{resultText}</h6>
 
                   <hr className="my-4" />
-                  
+                  {showPayBtn && (
                     <button
-                      data-mdb-button-init
-                      data-mdb-ripple-init
-                      className="btn btn-primary btn-lg "
-                      type="button"
-                      id="submit_btn"
-                      disabled={!pageResult}
-                      onClick={() => navigate("/")}
-                    >
-                      Go to Home Page
-                    </button>
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    className="btn btn-primary btn-lg "
+                    type="button"
+                    id="submit_btn"
+                    onClick={(e) => submitHandler(e)}
+                  >
+                   Paynow ${amount.toFixed(2)}
+                  </button>
+                  )}
+
+                {showHomeBtn && (
+                    <button
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    className="btn btn-primary btn-lg "
+                    type="button"
+                    id="submit_btn"
+                    
+                    onClick={() => navigate('/')}
+                  >
+                   Got to home
+                  </button>
+                  )}
+                    
                   
 
                   {/* <div data-mdb-input-init className="form-outline mb-2 text-start">

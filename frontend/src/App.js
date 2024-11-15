@@ -28,6 +28,7 @@ import BookingForm from './components/booking/BookingForm.js';
 import { getVehicles } from './actions/vehicleActions.js';
 import PaymentPayNowQr from './components/orders/PaymentPayNowQr.js';
 import OurServices from './components/pages/OurServices.js';
+import Navbar from './components/layouts/Navbar.js';
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState('');
@@ -59,7 +60,8 @@ function App() {
     <Router>
     <div className="App">
       <HelmetProvider>
-      <Header/>
+      {/* <Header/> */}
+      <Navbar/>
       <ToastContainer theme="dark"/>
       <Routes>
 

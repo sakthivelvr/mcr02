@@ -208,10 +208,12 @@ const orderSchema = new mongoose.Schema({
             },
 
             paidAt : {
-                type: Date,
+                type: String,
             },
 
-            paymentTxnId: String
+            paymentTxnId: {
+                type: String,
+            }
 
         },
         vehicleName: {

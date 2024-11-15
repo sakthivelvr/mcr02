@@ -6,7 +6,9 @@ const ordersSlice = createSlice({
     name : "orders",
     initialState : {
         loading : false,
-        products : []
+        isOrderCreated : false,
+        order : null
+        // products : []
     },
     reducers : {
         orderRequest(state, action) {

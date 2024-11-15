@@ -14,8 +14,8 @@ export default function VehicleList() {
         <section className="page-section portfolio" id="portfolio">
             <div className="container">
                 {/* <!-- Portfolio Section Heading--> */}
-                <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0" 
-                >Our Vehicles</h2>
+                <h3 className="page-section-heading text-center text-uppercase text-secondary mb-0" 
+                >Our Vehicles</h3>
                 {/* <!-- Icon Divider--> */}
                 <div className="divider-custom">
                     <div className="divider-custom-line"></div>

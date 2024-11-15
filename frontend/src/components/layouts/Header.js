@@ -3,6 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { DropdownButton, Dropdown, Image } from "react-bootstrap";
 import { logout } from "../../actions/userActions";
+import "../../../node_modules/bootstrap/js/src/collapse.js";
+
+// import "../../../node_modules/jquery/dist/jquery.min.js";
+// import "../../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 export default function Header() {
   const { isAuthenticated, user } = useSelector((state) => state.authState);
@@ -13,6 +17,7 @@ export default function Header() {
     dispatch(logout);
   };
 
+  
   return (
     <>
       {/* <!-- Navigation--> */}
@@ -24,8 +29,8 @@ export default function Header() {
         <div className="container" >
           <a className="navbar-brand" href="#">
           <Link  style={{color: "#A6AEBF", textDecoration: "None"}} to="/" >MaxicabRide</Link>
-            
           </a>
+
           <button
             className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
             type="button"

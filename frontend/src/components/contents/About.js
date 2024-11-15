@@ -27,11 +27,17 @@ export default function About() {
                     MaxiCabRide*
                     Reliable Transportation Since 2016</p>
                     <ul className="lead">
-                        <li>Airport transfers</li>
-                        <li>City transfers</li>
-                        <li>Events</li>
-                        <li>Corporate transport</li>
-                        <li>Wheelchair transport</li>
+                        <li>Airport Transfers</li>
+                        <li>Point to Point Transfers</li>
+                        <li>Hourly Booking</li>
+                        <li>Corporate Booking</li>
+                        <li>City Transfers</li>
+                        <li>Events Booking</li>
+                        <li>Group Booking</li>
+                        <li>Workers Transfer</li>
+
+
+                        
                         
                     </ul>
                     </div>

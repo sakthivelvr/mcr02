@@ -123,7 +123,7 @@ export default function BookingForm() {
     {
       _id: "1",
       value: "CARD_PAYMENT",
-      name: "CARD PAYMENT - 10% Admin charges",
+      name: "CARD PAYMENT - 10% Admin Charges",
     },
     {
       _id: "2",
@@ -260,9 +260,11 @@ export default function BookingForm() {
       paymentDetails : {
           paymentMode : selectedPaymentMethod[0].value,
           paymentStatus : "PENDING",
+          
 	    },
       
       orderStatus: "PENDING",
+      
       // user: user._id,
       vehicleId: selectedVehicle[0]._id,
       serviceId: selectedService[0]._id,
@@ -423,7 +425,7 @@ export default function BookingForm() {
     setServiceStatus(false)
     setHoursStatus(false)
 
-      setWayTransferPrice(`Price : $${res[0].price}.00`)
+      setWayTransferPrice(`Price : $${res[0].price.toFixed(2)}`)
 
       subServiceSelectHandler(res)
       // setfilteredSubServices(null)
@@ -1073,7 +1075,7 @@ export default function BookingForm() {
                     // disabled={loading}
                     onClick={(e) => submitHandler(e)}
                   >
-                    {fullPriceDetails.totalPrice !== 0 && `$${fullPriceDetails.totalPrice} `}Book Now
+                    {fullPriceDetails.totalPrice !== 0 && `$${fullPriceDetails.totalPrice.toFixed(2)} `}Book Now
                   </button>
 
                 </>
